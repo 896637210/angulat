@@ -1,0 +1,93 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "editor.formatOnSave": true,
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Solarized Dark",
+    "files.autoSave": "onFocusChange"
+}
+????????????????????????????????????
+String.formCharCode();ascii码；
+sub
+sup
+.toLowerCase();小写
+.toUpperCase();大写
+
+
+npm i -g smart-npm
+snpm i -g http-server
+snpm i -g bower
+snpm i -g cordova
+
+npm init
+bower init
+
+cordova create app
+cd app
+bower init
+bower i --save bootstrap
+
+http-server
+http-server -p 80
+
+
+////////////////
+全局
+snpm i -g gulp
+项目下执行
+snpm i --save gulp
+再创建gulpfile.js 文件
+
+sass
+
+snpm i --save gulp-sass
+
+
+## SASS 语法简介
+
+### 使用与编译输出模式
+#### 后缀名：*.scss （意为 Sassy CSS）
+#### 编译风格（输出模式）：
+##### （1）nested 嵌套型，默认
+##### （2）compact 紧缩型、简洁型
+##### （3）expanded 原型，没有缩进的
+##### （4）compressed 压缩型
+
+### 变量开头必须是 $
+###### $ _A-Za-z _A-Za-z0-9
+
+### 变量赋值 $color: red;
+###### 注意：必须有最后的分号 **;** ！
+
+### 变量的运算：乘除注意单位！
+### 变量用于样式表属性名和值：#{$xxx}
+
+### @mixin 模版的调用 @include
+```
+@mixin border($w: 1px, $s: solid, $c: red){
+	border: $w $s $c;
+}
+.box {
+	@include border(2px, dotted);
+}
+```
+### @if {} @else {} 条件判断
+### @for $i from 1 through 2 {} 循环
+### @for $i from 1 to 2 {} 区别
+```
+@for $i from 1 through 2 {
+	.box-#{$i} {}
+} // 1 <= $i <= 2
+@for $i from 1 to 2 {
+	.box-#{$i} {}
+} // 1 <= $i < 2
+```
+
+
+将10进制转换为2进制，八进制，十六进制字符串
+Object.toString(n) : 即可 (n) 表示进制
+
+
+//禁止空格
+onkeyup="this.value=this.value.replace(/\s+/g,'')"
+//禁止粘贴  拖拽
+ onpaste="return false" ondrop="return false" ondragenter="return false;" ondragstart="return false"

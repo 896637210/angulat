@@ -1,0 +1,44 @@
+﻿snpm i -g snpm
+snpm i -g npm
+snpm i -g cordova
+snpm i -g gulp
+
+# 配置（登记）git账号
+git config --global user.name "user name"
+git config --global user.email "user@name"
+
+# 装必要组件
+snpm i -g node-sass
+snpm i -g node-gyp
+
+# 全局安装 ionic
+snpm i -g ionic
+
+# 检测
+ionic -v
+
+# 创建ionic空白模板项目
+ionic start iapp0 blank --type=ionic1
+
+# 创建ionic选项卡模板例子
+ionic start app1 tabs --type=ionic1\
+# 创建ionic 侧边栏模板例子
+ionic start app1 sidemenu --type=ionic1
+
+# 进入项目根目录
+cd app1
+
+# 启动 ionic 项目
+ionic serve
+
+
+
+RaspberryPi	270-310
+树莓派
+Cmder
+ssh pi@192.168.2.235
+
+ARP	arp -a
+
+Pi	Debian / Linux
+PC	CentOS
